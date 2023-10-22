@@ -114,8 +114,6 @@ istream& operator>>(istream& istr, TSet& s) // ввод
         s.InsElem(m);
         istr >> d;
     }
-
-
     return istr;
 }
 
@@ -127,9 +125,7 @@ ostream& operator<<(ostream& ostr, const TSet& s) // вывод
         if (s.IsMember(i))
         {
             ostr << i << ' ';
-
         }
-
     }
     ostr << ')';
     return ostr;
